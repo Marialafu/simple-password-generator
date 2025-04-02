@@ -3,10 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Password generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <div class="password-generator-container">
+    <div class="password-generator">
+    <input type="text" placeholder="password..." readonly id="result-password" class="password-block font-family password-text"></input>
+
+    <p id="selected-length" class="font-family text"></p>
+    
+    <span class="range-component-bar">
+      <p class="font-family text"></p>
+      <input type="range" class="range-bar" min="10" max="30" id="range">
+      <p class="font-family text"></p>
+    </span>
+
+    <button id="generate-password-button" class="generate-password-button text font-family">Generate Password</button>
+  </div>
+</div>
     <script src="./js/scripts.js"></script>
   </body>
 </html>
